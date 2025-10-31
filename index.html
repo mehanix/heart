@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apps with Heart</title>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #fafafa;
+      background-image: radial-gradient(#d6d6d6 1.2px, transparent 1.2px);
+      background-size: 18px 18px;
+      font-family: 'Ubuntu', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      color: #333;
+    }
+
+    .container {
+      max-width: 480px;
+      padding: 36px 18px;
+      display: grid;
+      grid-template-rows: auto auto auto;
+      justify-items: center;
+      row-gap: 18px;
+      background-position: 0 9px; /* align grid with dot grid */
+    }
+
+    img {
+      width: 320px;
+      margin: 0;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.62rem; /* matches grid rhythm */
+      margin: 0;
+      font-weight: 400;
+      text-align: center;
+    }
+
+    .email-link {
+      text-decoration: none;
+      color: #ff2121;
+      font-weight: 600;
+    }
+
+    .email-link:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 28px 14px;
+        row-gap: 16px;
+      }
+
+      img {
+        width: 220px;
+      }
+
+      p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <img src="logo.png" alt="Apps with Heart Logo" />
+
+    <p>
+      Technology that feels personal.<br>Designed with care. Built with intention.
+    </p>
+
+    <p>
+      Have an idea? Let's bring it to life:<br>
+      <a class="email-link" href="mailto:build@yourdomain.com">build@appswithhe.art</a>
+    </p>
+  </div>
+</body>
+</html>
